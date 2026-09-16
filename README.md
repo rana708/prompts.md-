@@ -10,6 +10,10 @@ Framework
 7. Success criteria
 
 ## Prompt #1
+The hypothetical code (def get_user(user_id):
+    query = "SELECT * FROM users WHERE id = " + user_id
+    result = db.execute(query)
+    return result[0])
 Original:
 review this code:
 def get_user(user_id):
