@@ -18,13 +18,13 @@ def get_user(user_id):
     return result[0]
 
 What is missing:
-- Role — مفيش تحديد لهوية المراجع (junior؟ senior؟ security-focused؟)
-- Context — مفيش معلومة إن الفانكشن دي شغالة في production ولا user_id جاي منين
-- Constraints — مفيش نطاق واضح (نركز على security؟ performance؟ style؟)
-- Format — مفيش شكل محدد للرد
-- Examples/Criteria — مفيش تعريف لإيه يعتبر "خطير" وإيه لأ
-- Success criteria — مفيش تعريف لإيه هو الرد "الكامل/الناجح"
-  (Task موجود ضمنيًا: "review this code")
+Role — There is no specification of the reviewer’s role or expertise (junior, senior, security-focused, etc.).
+Context — There is no information about whether the function is running in production or where `user_id` comes from.
+Constraints — There is no clear scope (should the review focus on security, performance, style, or something else?).
+Format — There is no specified format for the response.
+Examples — There is no definition of what should be considered **“high risk”** versus a lower-severity issue.
+Success Criteria — There is no definition of what makes the response **“complete” or “successful.”**
+(The Task is implicitly present: “review this code.”)
 
 The complete version:
 Role: You are a senior Python backend engineer doing a security-focused code review.
